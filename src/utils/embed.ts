@@ -81,7 +81,7 @@ export function applyCommonAncestorStyling(embedEl: HTMLElement) {
 	const m = scrollerStyle.paddingLeft;
 
 	let style = parentEmbedBlockEl.getAttribute('style') ?? '';
-	style += `; margin-left: calc(-${m} + 4px) !important`;
-	style += `; margin-right: calc(-${m} + 4px) !important`;
+	style += `; margin-left: auto !important`;
+	style += `; margin-right: auto !important`;
 	parentEmbedBlockEl.setAttribute('style', style);
 }
